@@ -1,11 +1,6 @@
-import sys
-from pathlib import Path
 from fastmcp import FastMCP
 
-parent_dir = Path(__file__).resolve().parent.parent
-sys.path.append(str(parent_dir))
-
-from server.tools import (
+from tools import (
     marks_to_grade_points,
     calculate_semester_gpa,
     calculate_new_cgpa,
